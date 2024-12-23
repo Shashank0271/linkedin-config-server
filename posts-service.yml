@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/linkedin
+    username: shashank
+    password: shashank
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 8000
