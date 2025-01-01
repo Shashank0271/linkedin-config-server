@@ -1,5 +1,7 @@
 spring:
-
+  application:
+    name: user-service
+  
   datasource:
     url: jdbc:postgresql://localhost:5432/linkedin
     username: shashank
@@ -14,3 +16,5 @@ spring:
 
 server:
   port: 8082
+  servlet:
+    context-path: /users
