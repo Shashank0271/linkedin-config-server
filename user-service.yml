@@ -1,7 +1,12 @@
+
+
 spring:
+  # config:
+  #   import:
+  #     - configserver:http://localhost:8888
   application:
     name: user-service
-  
+
   datasource:
     url: jdbc:postgresql://localhost:5432/linkedin
     username: shashank
