@@ -1,4 +1,4 @@
-#eureka
+# Eureka
 eureka:
   client:
     fetch-registry: true
@@ -8,13 +8,18 @@ eureka:
   instance:
     prefer-ip-address: true
 
-#actuator
+# Actuator
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 
-#micrometer
-management.tracing.sampling.probability: 1.0
-spring.zipkin.baseUrl: http://localhost:9411
+# Micrometer
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411
