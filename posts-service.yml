@@ -1,4 +1,13 @@
 spring:
+  application:
+    name: posts-service
+    
+  kafka:
+    bootstrap-server: 172.22.154.68:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      
   datasource:
     url: jdbc:postgresql://localhost:5432/linkedin
     username: shashank
@@ -17,3 +26,5 @@ eureka:
 
 server:
   port: 8000
+  servlet:
+    context-path: /posts
