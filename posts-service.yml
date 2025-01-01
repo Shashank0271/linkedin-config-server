@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: posts-service
     
   kafka:
     bootstrap-server: 172.22.154.68:9092
