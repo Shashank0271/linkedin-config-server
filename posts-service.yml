@@ -18,10 +18,6 @@ spring:
     database: postgresql
     show-sql: true
 
-eureka:
-  instance:
-    prefer-ip-address: true
-
 server:
   port: 8000
   servlet:
