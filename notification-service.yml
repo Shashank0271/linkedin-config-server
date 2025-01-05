@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/linkedin
+    url: jdbc:postgresql://notification-db:5432/linkedin
     username: shashank
     password: shashank
     driver-class-name: org.postgresql.Driver
@@ -12,7 +12,7 @@ spring:
     show-sql: true
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: kafka:9092
     consumer:
       group-id: ${spring.application.name}
       key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
