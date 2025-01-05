@@ -1,16 +1,16 @@
 spring:
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/linkedin
-    username: shashank
-    password: shashank
-    driver-class-name: org.postgresql.Driver
+  # datasource:
+  #   url: jdbc:postgresql://localhost:5432/linkedin
+  #   username: shashank
+  #   password: shashank
+  #   driver-class-name: org.postgresql.Driver
 
-  jpa:
-    hibernate:
-      ddl-auto: create
-    database: postgresql
-    show-sql: true
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: create
+  #   database: postgresql
+  #   show-sql: true
 
   cloud:
     gateway:
