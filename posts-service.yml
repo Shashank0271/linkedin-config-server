@@ -7,7 +7,7 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       
   datasource:
-    url: jdbc:postgresql://localhost:5432/linkedin
+    url: jdbc:postgresql://posts_db:5432/linkedin
     username: shashank
     password: shashank
     driver-class-name: org.postgresql.Driver
