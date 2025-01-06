@@ -18,7 +18,9 @@ management:
     sampling:
       probability: 1.0
 
-# Micrometer
+# Tracing
 spring:
   zipkin:
     baseUrl: http://zipkin:9411
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
